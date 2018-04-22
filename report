@@ -1,0 +1,132 @@
+<html>
+	<head><title>JavaScript</title>
+		<script language="JavaScript">
+			function report()
+				{
+				var a=window.document.cal.c1.value;
+				var b=window.document.cal.c2.value;
+				      window.document.cal.c3.value=parseFloat(a)+parseFloat(b);
+				var c=window.document.cal.c3.value;
+					
+				var d=window.document.cal.cp1.value;
+				var e=window.document.cal.cp2.value;
+				      window.document.cal.cp3.value=parseFloat(d)+parseFloat(e);
+				var f=window.document.cal.cp3.value;
+				
+				var g=window.document.cal.j1.value;
+				var h=window.document.cal.j2.value;
+				      window.document.cal.j3.value=parseFloat(g)+parseFloat(h);
+				var i=window.document.cal.j3.value;
+				
+				var j=window.document.cal.p1.value;
+				var k=window.document.cal.p2.value;
+				      window.document.cal.p3.value=parseFloat(j)+parseFloat(k);
+				var l=window.document.cal.p3.value;
+				
+				var m=window.document.cal.s1.value;
+				var n=window.document.cal.s2.value;
+				      window.document.cal.s3.value=parseFloat(m)+parseFloat(n);
+				var o=window.document.cal.s3.value;
+					  window.document.cal.gt.value=parseFloat(c)+parseFloat(f)+parseFloat(i)+parseFloat(l)+parseFloat(o);
+				var p=window.document.cal.gt.value;
+					
+				
+			}
+		</script>
+		<style>
+	.demo {
+		border:1px solid #C0C0C0;
+		border-collapse:collapse;
+		padding:5px;
+	}
+	.demo th {
+		border:1px solid #C0C0C0;
+		padding:5px;
+		background:#F0F0F0;
+	}
+	.demo td {
+		border:1px solid #C0C0C0;
+		padding:5px;
+	}
+			
+</style>
+	</head>
+	<body>
+	<form name="cal">
+		<h1>Report Card</h1>
+		
+<table class="demo">
+	<tbody>
+	<tr>
+		<td>&nbsp;Name</td>
+		<td><input type=text id=n></td>
+	</tr>
+	<tr>
+		<td>&nbsp;Roll Number</td>
+		<td><input type=text id=r></td>
+	</tr>
+	<tr>
+		<td>&nbsp;Address</td>
+		<td><input type=text id=a></td>
+	</tr>
+	</tbody>
+</table><br>
+<table class="demo">
+	
+	<tr>
+		<th>Subject</th>
+		<th>Internal(25)</th>
+		<th>External(75)</th>
+		<th>Total</th>
+	</tr>
+
+	<tbody>
+	<tr>
+		<td>&nbsp;C</td>
+		<td><input type=text id=c1></td>
+		<td><input type=text id=c2></td>
+		<td><input type=text id=c3></td>
+	</tr>
+	<tr>
+		<td>&nbsp;C++</td>
+		<td><input type=text id=cp1></td>
+		<td><input type=text id=cp2></td>
+		<td><input type=text id=cp3></td>
+	</tr>
+	<tr>
+		<td>Java</td>
+		<td><input type=text id=j1></td>
+		<td><input type=text id=j2></td>
+		<td><input type=text id=j3></td>
+	</tr>
+	<tr>
+		<td>&nbsp;PHP</td>
+		<td><input type=text id=p1></td>
+		<td><input type=text id=p2></td>
+		<td><input type=text id=p3></td>
+	</tr>
+	<tr>
+		<td>&nbsp;My SQl</td>
+		<td><input type=text id=s1></td>
+		<td><input type=text id=s2></td>
+		<td><input type=text id=s3></td>
+	</tr>
+		<tr >
+			<td rowspan=3 colspan=2></td>
+			<td align="middle">Grand Total</td>
+			<td><input type=text id=gt></td>
+		</tr>
+		<tr>
+			<td align="middle"> Percentage</td>
+			<td><input type=text id=p></td>
+		</tr>
+		<tr>
+			<td align="middle"><input type="button" value="Calculate" Onclick="report()"></td>
+			<td><input type=text id=p></td>
+		</tr>
+	<tbody>
+</table>
+		</form>
+	</body>
+	
+</html>
